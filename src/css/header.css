@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'moniqaextra_bold_heading';
+  src: url('moniqa-extraboldheading-webfont.woff2') format('woff2'),
+       url('moniqa-extraboldheading-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.header {
+  padding: 20px 0;
+  
+  
+}
+.header-container{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; 
+  
+}
+.logo{
+  font-family: "moniqaextra_bold_heading", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ba5239;
+  font-size: 32px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.nav-list{
+  display: none;
+}
+.header-icons {
+  display: none;
+}
+.header__btn {
+  border: none;
+  background-color: transparent; 
+  padding: 0;
+  line-height: 0;
+}
+.btn__svg{
+  stroke: #2f2f37;
+}
+
+@media screen and (min-width: 768px){
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list{
+    display: flex;
+    /* justify-content: flex-end; */
+  }
+
+  .header-icons{
+    display: flex;
+  }
+  .icon-list-top{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .burger-btn{
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo{
+    margin-right: 50px;
+    font-size: 42px;
+  }
+
+  .nav-link {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: center;
+    color: #42272d;
+  }
+  
+  .nav-list-link:hover,
+  .nav-list-link:focus {
+    color: #ba5239;;
+  }
+}
+@media screen and (min-width: 1280px){
+  .header {
+    padding: 34px 0;
+  }
+  .logo{
+    font-weight: 900;
+    margin-right: 247px;
+    font-size: 50px;
+  }
+  .nav-list{
+    gap: 35px;
+  }
+}
+
+
+
+
+
+
