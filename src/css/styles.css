@@ -45,6 +45,11 @@ body {
 .section {
   padding: 80px 0;
 }
+.container {
+  max-width: 375px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -58,7 +63,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* 
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -88,11 +93,7 @@ body {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding-left: 194px;
-    padding-right: 194px;
+    padding: 0 195px;
     margin: 0 auto;
   }
-} */
-.container {
-  padding: 0 195px;
 }
