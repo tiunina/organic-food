@@ -1,7 +1,24 @@
+.hero_icon_leaf {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 1.25em;
+  outline: 1px solid red;
+  z-index: 999;
+
+  display: inline-block;
+  stroke: #8fb339;
+  fill: #8fb339;
+  /* stroke-width: 0; */
+  /* stroke: currentColor;
+  style="fill: var(--color1, #8fb339)"
+  fill: currentColor; */
+}
+
 .swiper {
   position: absolute !important;
   width: 100%;
-  height: 935px;
+  height: 235px;
   left: 0;
   top: 0;
   right: 0;
@@ -15,10 +32,11 @@
 .swiper-slide img {
   object-fit: contain;
 }
+
 .hero_title__container {
   display: flex;
   flex-direction: column;
-  padding: 11rem 0 0 0;
+  padding: 10rem 0 0 2rem;
   position: relative;
   z-index: 1;
   pointer-events: none;
@@ -30,7 +48,7 @@
   text-transform: capitalize;
   color: var(--color-primary);
   pointer-events: all;
-  font-size: 40px;
+  font-size: 50px;
 
   margin-bottom: 10px;
   line-height: 0.58;
@@ -77,11 +95,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .swiper {
+    height: 435px;
+  }
   .hero_title__container {
-    padding: 13rem 0 0 0rem;
+    padding: 15rem 0 0 5rem;
   }
   .hero_title {
-    font-size: 80px;
+    font-size: 100px;
     margin-bottom: 20px;
   }
   .hero_sub-title {
@@ -89,10 +110,6 @@
     line-height: 0.9;
   }
 
-  .swiper-slide img {
-    width: 100%;
-    object-fit: contain;
-  }
   .swiper-pagination {
     width: 0.25rem;
     top: 200px !important;
@@ -102,22 +119,29 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .swiper {
+    height: 835px;
+  }
+  .hero_icon_leaf {
+    top: 363px;
+    left: 343px;
+  }
   .swiper-pagination {
     top: 218px !important;
     height: 644px;
-    margin-right: 196px;
+    margin-right: 100px;
   }
   .hero_title__container {
-    padding: 451px 0 0 0;
+    padding: 350px 0 0 5rem;
   }
+
   .hero_title {
-    font-size: 260px;
-    line-height: 150px;
+    font-size: 160px;
+
     margin-bottom: 72px;
   }
   .hero_sub-title {
-    font-size: 200px;
-    line-height: 180px;
+    font-size: 140px;
   }
   .number {
     display: block;
@@ -132,12 +156,30 @@
   .number_01 {
     position: absolute;
     top: 196px;
-    right: 224px;
+    right: 126px;
   }
 
   .number_03 {
     position: absolute;
     top: 818px;
-    right: 224px;
+    right: 126px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper {
+    height: 935px;
+  }
+  .swiper-pagination {
+    margin-right: 196px;
+  }
+  .hero_title__container {
+    padding: 28rem 0 0 5rem;
+  }
+  .hero_title {
+    font-size: 200px;
+    margin-bottom: 72px;
+  }
+  .hero_sub-title {
+    font-size: 160px;
   }
 }
