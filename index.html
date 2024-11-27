@@ -17,7 +17,7 @@
     <script type="module" crossorigin src="/organic-food/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/organic-food/assets/vendor-7d212bb0.js">
     <link rel="stylesheet" href="/organic-food/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/organic-food/assets/index-0e38960f.css">
+    <link rel="stylesheet" href="/organic-food/assets/index-43a72e43.css">
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,7 @@
       <div>
         <a href="./index.html" class="logo">
           <svg class="header_icon-logo" width="174" height="111.7">
-            <use href="/organic-food/assets/icons-e7afee4f.svg#icon-logo"></use>
+            <use href="/organic-food/assets/icons-e91a146d.svg#icon-logo"></use>
           </svg>
         </a>
       </div>
@@ -48,7 +48,7 @@
 
         <button class="cart-btn header__btn">
           <svg class="cart-icon btn__svg" width="19" height="19">
-            <use href="/organic-food/assets/icons-e7afee4f.svg#icon-cart"></use>
+            <use href="/organic-food/assets/icons-e91a146d.svg#icon-cart"></use>
           </svg>
           <span class="cart-span">Cart</span>
         </button>
@@ -65,9 +65,9 @@
           </button>
         </div>
       </div>
-      <button class="burger-btn">
+      <button type="button" class="burger-btn">
         <svg class="burger-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-e7afee4f.svg#icon-menu"></use>
+          <use href="/organic-food/assets/icons-e91a146d.svg#icon-menu"></use>
         </svg>
       </button>
     </nav>
@@ -76,7 +76,7 @@
 
 
     <main>
-      <section class="section__hero" id="section__hero">
+      <section class="section__hero section" id="section__hero">
   <div class="swiper">
     <div class="swiper-wrapper">
       <!-- Lazy image -->
@@ -125,19 +125,78 @@
 
     <div class="swiper-pagination"></div>
   </div>
-  <div class="container">
-    <div class="hero_title__container">
-      <h1 class="hero_title">organic</h1>
-      <h2 class="hero_sub-title">food for a</h2>
-      <h2 class="hero_sub-title">golden life.</h2>
-      <p class="number number_01">01</p>
-      <p class="number number_03">03</p>
-    </div>
+  <div class="hero_icon_leaf">
+    <svg class="hero_icon" width="40" height="32">
+      <use href="/organic-food/assets/icons-e91a146d.svg#icon-leaf"></use>
+    </svg>
+  </div>
+
+  <div class="hero_title__container">
+    <h1 class="hero_title">organic</h1>
+    <h2 class="hero_sub-title">food for a</h2>
+    <h2 class="hero_sub-title">golden life.</h2>
+
+    <p class="number number_01">01</p>
+    <p class="number number_03">03</p>
   </div>
 </section>
 
-      <section class="section__hero" id="section__hero">
-  <div class="container__hero"></div>
+      <section class="section__aboutUs section" id="section__aboutUs">
+  <div class="container__aboutUs container">
+    <divc class="aboutUs_description">
+      <p class="about-us">About Us</p>
+      <h2 class="aboutUs_title">
+        Encouraging people to live a healthier lifestyle
+      </h2>
+      <p class="aboutUs_p_description">
+        We are promoting balanced nutrition, regular physical activity, mental
+        well-being, and sustainable habits. By sharing practical advice,
+        inspiring stories, and creating supportive communities, we can motivate
+        individuals to make positive changes that lead to long-term health and
+        happiness
+      </p>
+      <button type="button" class="aboutUs_btn">Explore</button>
+    </divc>
+    <picture class="aboutUs_img img_cabbage">
+      <source
+        srcset="/organic-food/assets/cabbage-06494d10.jpg 1x, /organic-food/assets/cabbage@2x-16629b0d.jpg 2x"
+      />
+      <img loading="lazy" src="/organic-food/assets/cabbage-06494d10.jpg" alt="cabbage" />
+    </picture>
+
+    <picture class="aboutUs_img img_carrot">
+      <source
+        srcset="/organic-food/assets/carrot-5e634f26.jpg 1x, /organic-food/assets/carrot@2x-118f4423.jpg 2x"
+      />
+      <img loading="lazy" src="/organic-food/assets/carrot-5e634f26.jpg" alt="carrot" />
+    </picture>
+  </div>
+</section>
+
+      <section class="section__ourProducts section" id="section__ourProducts">
+  <div class="container__ourProducts container">
+    <div>
+      <p>Be Healthy</p>
+      <h2>Our Product</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        ullamcorper convallis fermentum.
+      </p>
+    </div>
+    <div class="svg_ourProduct">
+      <button type="button" class="basket_btn svg_btn_ourProduct">
+        <svg class="basket-icon" width="36" height="28">
+          <use href="/organic-food/assets/icons-e91a146d.svg#basket"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="basket_btn svg_btn_ourProduct">
+        <svg class="basket-icon" width="36" height="28">
+          <use href="/organic-food/assets/icons-e91a146d.svg#icon-beans"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
 
     </main>
