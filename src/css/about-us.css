@@ -1,3 +1,17 @@
+.container__aboutUs {
+  display: flex;
+  column-gap: 52px;
+  height: 982px;
+}
+.img_carrot_wrapper {
+  align-self: flex-end;
+}
+.img_carrot_img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .aboutUs_description {
   display: flex;
   align-items: flex-start;

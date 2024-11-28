@@ -1,0 +1,43 @@
+.container_taste-nature {
+  background-color: #2a2a2a;
+  background-image: url(/images/taste-nature/kateryna-hliznitsova-U5OIeA8tcG0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 699px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* need to change after adding svg */
+  gap: 49px;
+}
+
+.taste-nature_title {
+  width: 767px;
+  font-weight: 400;
+  font-size: 96px;
+
+  /* line-height: 90px; */
+  line-height: 0.9375;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  font-family: var(--second-family);
+}
+.taste-nature_btn {
+  border: 1px solid #fff;
+  border-radius: 0 50px;
+  width: 174px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  font-family: var(--first-family);
+}

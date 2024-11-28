@@ -1,12 +1,216 @@
-.basket_btn {
-  /* background-color: transparent; */
+.container__ourProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information_ourProduct {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 554px;
+  height: 242px;
+}
+.ourProduct_description_title {
+  font-weight: 400;
+  font-size: 50px;
+
+  /* line-height: 70px; */
+  line-height: 1.4;
+  text-transform: capitalize;
+  text-align: center;
+  color: #8fb339;
+  font-family: var(--second-family);
+}
+.ourProduct_description_p {
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 1.67;
+  text-align: center;
+  color: #333;
+  font-family: var(--first-family);
+}
+.svg_ourProduct_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 100px;
+  width: 1026px;
+  height: 84px;
+}
+
+.svg_btn_ourProduct {
+  background-color: transparent;
   border: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  fill: black;
-  stroke: black;
+  /* fill: #333333;
+  stroke: #333333; */
+}
+/* for all the gallery */
+.product_gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 33px;
+  column-gap: 33px;
+}
+/* individual */
+.product_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 66px) / 3);
+  /* width: 488px;
+  height: 640px; */
+}
+
+.product_info_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 7px;
+  width: 367px;
+  height: 125px;
+}
+
+.product_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 170px;
+  width: 367px;
+  height: 70px;
+}
+.product_name {
+  font-weight: 400;
+  font-size: 36px;
+
+  /* line-height: 70px; */
+  line-height: 1.94444;
+  text-transform: capitalize;
+  color: #333;
+  font-family: var(--second-family);
+}
+.product_price {
+  font-weight: 400;
+  font-size: 32px;
+
+  /* line-height: 30px; */
+  line-height: 0.9375;
+  color: #333;
+  font-family: var(--first-family);
+}
+.product_icon_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 143px;
+  width: 366px;
+  height: 48px;
+}
+.stars-icon {
+  width: 175px;
+  height: 26px;
+}
+.shopping-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.wrapper_background_lettuce {
+  background: #eaf8d3;
+}
+.product_img {
+  width: 416px;
+  height: 372px;
+}
+.wrapper_background_pear {
+  background: #fff2d8;
+}
+.product_img_pear {
+  /* width: 371px;
+  height: 495px; */
+}
+.wrapper_background_brocolli {
+  background: #eaf8d3;
+}
+.product_img_brocolli {
+  /* width: 481px;
+  height: 481px; */
+}
+.wrapper_background_tomatoes {
+  background: #e9f4fa;
+}
+.product_img_tomatoes {
+  /* width: 497px;
+  height: 497px; */
+}
+.wrapper_background_cucumbers {
+  background: #ffe4bc;
+}
+.product_img_cucumbers {
+  /* width: 481px;
+  height: 481px; */
+}
+.wrapper_background_cherries {
+  background: #e9f4fa;
+}
+.product_img_cherries {
+  /* width: 821px;
+  height: 547px; */
+}
+.wrapper_background_avocados {
+  background: #eaf8d3;
+}
+.product_img_avocados {
+  /* width: 783px;
+  height: 588px; */
+}
+.wrapper_background_raspberries {
+  background: #fff2d8;
+}
+.product_img_respberries {
+  /* width: 410px;
+  height: 410px; */
+}
+.wrapper_background_cabbages {
+  background: #eaf8d3;
+}
+.product_img_cabbages {
+  /* width: 344px;
+  height: 516px; */
+}
+
+.showMore_btn_ourProduct {
+  /* position: relative; */
+  border: 1px solid #8fb339;
+  border-radius: 0 50px;
+  width: 218px;
+  height: 50px;
+  margin-top: 73px;
+  background: #8fb339;
+
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: var(--first-family);
+  padding: 17px 42px;
 }
