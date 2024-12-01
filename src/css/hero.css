@@ -14,30 +14,43 @@
   style="fill: var(--color1, #8fb339)"
   fill: currentColor; */
 }
+.section__hero {
+  height: 935px;
+}
 
 .swiper {
   position: absolute !important;
   width: 100%;
   height: 235px;
+  /* height: 100%; */
   left: 0;
   top: 0;
   right: 0;
+  background-size: cover;
+}
+.swiper-slide {
+  height: 100%;
 }
 .section_hero {
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   overflow: hidden;
   margin: 0 auto;
 }
+
 .swiper-slide img {
-  object-fit: contain;
+  width: 100%; /* Image spans the width of the slide */
+  height: 100%; /* Makes the image match Swiper's height */
+  object-fit: cover; /* Ensures the image fills the area proportionally */
 }
 
 .hero_title__container {
   display: flex;
   flex-direction: column;
-  padding: 10rem 0 0 2rem;
-  position: relative;
+  /* padding: 10rem 0 0 2rem; */
+  position: absolute;
+  top: 150px;
+  left: 16px;
   z-index: 1;
   pointer-events: none;
 }
@@ -67,10 +80,10 @@
   font-size: 40px;
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
   width: 100%;
   object-fit: contain;
-}
+} */
 .swiper-pagination {
   top: 100px !important;
   transform: none !important;
@@ -95,8 +108,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  /* .section__hero {
+    height: 510px;
+  } */
   .swiper {
-    height: 435px;
+    height: 510px;
+    /* height: 100%; */
+  }
+  .swiper-slide {
+    height: 100%;
   }
   .hero_title__container {
     padding: 15rem 0 0 5rem;
@@ -113,15 +133,27 @@
   .swiper-pagination {
     width: 0.25rem;
     top: 200px !important;
-    margin-right: 70px;
+    /* margin-right: 70px; */
     height: 210px;
+    margin-right: 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  /* .section__hero {
+    height: 935px;
+  } */
   .swiper {
-    height: 835px;
+    height: 935px;
+    /* height: 100%; */
   }
+  .swiper-slide {
+    /* height: 935px !important; */
+    height: 100%;
+  }
+  /* .projects-section-list-card-image {
+    height: 935px;
+  } */
   .hero_icon_leaf {
     top: 363px;
     left: 343px;
@@ -145,6 +177,7 @@
   }
   .number {
     display: block;
+    position: absolute;
     color: white;
     font-weight: 400;
     font-size: 32px;
@@ -154,21 +187,16 @@
     font-family: var(--second-family);
   }
   .number_01 {
-    position: absolute;
-    top: 196px;
-    right: 126px;
+    top: 65px;
+    right: 224px;
   }
 
   .number_03 {
-    position: absolute;
-    top: 818px;
-    right: 126px;
+    top: 667px;
+    right: 224px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .swiper {
-    height: 935px;
-  }
   .swiper-pagination {
     margin-right: 196px;
   }

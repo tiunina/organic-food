@@ -12,5 +12,5 @@ const swiper = new Swiper('.swiper', {
 
 setTimeout(function tick() {
   swiper.slideNext(1500);
-  setTimeout(tick, 2000);
-}, 2000);
+  setTimeout(tick, 3000);
+}, 3000);

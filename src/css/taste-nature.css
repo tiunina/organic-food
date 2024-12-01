@@ -5,13 +5,12 @@
   background-position: center;
   background-size: cover;
   height: 699px;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* need to change after adding svg */
-  gap: 49px;
+  overflow: hidden;
 }
 
 .taste-nature_title {
@@ -25,6 +24,8 @@
   text-align: center;
   color: #fff;
   font-family: var(--second-family);
+  margin-top: 30px;
+  margin-bottom: 49px;
 }
 .taste-nature_btn {
   border: 1px solid #fff;
@@ -40,4 +41,15 @@
   color: #fff;
 
   font-family: var(--first-family);
+}
+
+.top_svg {
+  position: absolute;
+  left: 160px;
+  top: -37px;
+}
+.bottom_svg {
+  position: absolute;
+  right: 170px;
+  bottom: -47px;
 }
