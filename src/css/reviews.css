@@ -1,0 +1,11 @@
+.review-item-not-found {
+  min-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(250, 250, 250, 0.4);
+}
+.reviews-swiper-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}

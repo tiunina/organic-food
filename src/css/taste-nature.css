@@ -1,11 +1,11 @@
-.container_taste-nature {
+.section__taste-nature {
   background-color: #2a2a2a;
   background-image: url(/images/taste-nature/kateryna-hliznitsova-U5OIeA8tcG0-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 699px;
-  position: relative;
+  height: 499px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,10 +13,22 @@
   overflow: hidden;
 }
 
+.container_taste-nature {
+  position: relative;
+  height: 699px;
+}
+
+.title_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 168px;
+}
 .taste-nature_title {
-  width: 767px;
+  width: 300px;
   font-weight: 400;
-  font-size: 96px;
+  font-size: 36px;
 
   /* line-height: 90px; */
   line-height: 0.9375;
@@ -44,12 +56,50 @@
 }
 
 .top_svg {
+  width: 86px;
+  height: 177px;
   position: absolute;
-  left: 160px;
+  left: 0px;
   top: -37px;
 }
 .bottom_svg {
+  width: 86px;
+  height: 177px;
   position: absolute;
-  right: 170px;
+  right: 20px;
   bottom: -47px;
+}
+.white-leaf_svg {
+  width: 47px;
+  height: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__taste-nature {
+    height: 699px;
+  }
+  .taste-nature_title {
+    width: 567px;
+    font-size: 66px;
+  }
+  .white-leaf_svg {
+    width: 77px;
+    height: 63px;
+  }
+  .top_svg {
+    width: 136px;
+    height: 227px;
+  }
+  .bottom_svg {
+    width: 136px;
+    height: 227px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .taste-nature_title {
+    width: 767px;
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 1440px) {
 }

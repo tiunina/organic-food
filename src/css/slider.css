@@ -1,0 +1,20 @@
+.swiper_slider {
+  position: relative;
+  overflow: hidden;
+  height: 396px;
+}
+
+.swiper-wrapper_slider {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.slider_img img {
+  max-width: none;
+  display: flex;
+  width: 300px;
+  height: auto;
+}
+.swiper-slide_slider {
+  flex-shrink: 0;
+}

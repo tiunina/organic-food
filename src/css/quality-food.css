@@ -1,14 +1,9 @@
-.container__qualityFood {
+/* .container__qualityFood {
   display: flex;
   column-gap: 184px;
   justify-content: center;
   align-items: center;
-}
-
-.qualityFood_img {
-  width: 765px;
-  height: 683px;
-}
+} */
 
 .qualityFood_description {
   display: flex;
@@ -16,22 +11,23 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
+  width: 300px;
+  /* height: 358px; */
 
-  width: 550px;
-  height: 358px;
+  margin-top: 30px;
 }
 .only-organic_p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 
   /* line-height: 30px; */
-  line-height: 1.66667;
+  line-height: 1.67;
   color: #333;
   font-family: var(--first-family);
 }
 .only-organic_title {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 30px;
 
   /* line-height: 70px; */
   line-height: 1.4;
@@ -53,4 +49,82 @@
   text-align: center;
   color: #fff;
   font-family: var(--first-family);
+}
+.btn-container_q-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__qualityFood {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .description-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  } */
+  .qualityFood_description {
+    width: 300px;
+    /* height: 358px; */
+    margin-top: 0;
+  }
+  .btn-container_q-food {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .qualityFood_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+  }
+  .only-organic_p {
+    font-size: 16px;
+  }
+  .only-organic_title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container__qualityFood {
+    column-gap: 80px;
+  }
+  .qualityFood_description {
+    width: 350px;
+  }
+
+  /* .only-organic_p {
+    font-size: 18px;
+  }
+  .only-organic_title {
+    font-size: 30px;
+  } */
+}
+@media screen and (min-width: 1440px) {
+  .container__qualityFood {
+    column-gap: 184px;
+  }
+  .qualityFood_img {
+    width: 765px;
+    height: 683px;
+  }
+  .qualityFood_description {
+    width: 550px;
+  }
+
+  .only-organic_p {
+    font-size: 18px;
+  }
+  .only-organic_title {
+    font-size: 50px;
+  }
 }

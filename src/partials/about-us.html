@@ -7,28 +7,24 @@
       </h2>
       <p class="aboutUs_p_description">
         We are promoting balanced nutrition, regular physical activity, mental
-        well-being, and sustainable habits. By sharing practical advice,
-        inspiring stories, and creating supportive communities, we can motivate
-        individuals to make positive changes that lead to long-term health and
-        happiness
+        well-being, and sustainable habits.
       </p>
       <button type="button" class="aboutUs_btn">Explore</button>
-      <div class="img_carrot_wrapper">
-        <picture class="aboutUs_img img_carrot">
-          <source
-            srcset="
-              /images/about-us/carrot.jpg    1x,
-              /images/about-us/carrot@2x.jpg 2x
-            "
-          />
-          <img
-            class="img_carrot_img"
-            loading="lazy"
-            src="/images/about-us/carrot.jpg"
-            alt="carrot"
-          />
-        </picture>
-      </div>
+
+      <picture class="aboutUs_img img_carrot">
+        <source
+          srcset="
+            /images/about-us/carrot.jpg    1x,
+            /images/about-us/carrot@2x.jpg 2x
+          "
+        />
+        <img
+          class="img_carrot_img"
+          loading="lazy"
+          src="/images/about-us/carrot.jpg"
+          alt="carrot"
+        />
+      </picture>
     </div>
     <picture class="aboutUs_img img_cabbage">
       <source
@@ -37,7 +33,19 @@
           /images/about-us/cabbage@2x.jpg 2x
         "
       />
-      <img loading="lazy" src="/images/about-us/cabbage.jpg" alt="cabbage" />
+      <img
+        class="img_cabbage_img"
+        loading="lazy"
+        src="/images/about-us/cabbage.jpg"
+        alt="cabbage"
+      />
     </picture>
+
+    <svg class="about-us_icon_left" width="74" height="260">
+      <use href="/images/icons.svg#icon-green-branch-left"></use>
+    </svg>
+    <svg class="about-us_icon_right" width="74" height="260">
+      <use href="/images/icons.svg#icon-green-branch-right"></use>
+    </svg>
   </div>
 </section>
