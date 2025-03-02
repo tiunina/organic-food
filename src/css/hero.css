@@ -1,7 +1,7 @@
 .hero_icon_leaf {
   margin-bottom: 4px;
   position: absolute;
-  z-index: 99;
+  z-index: 1;
   display: inline-block;
   stroke: #8fb339;
   fill: #8fb339;
@@ -48,7 +48,7 @@
   flex-direction: column;
   position: relative;
   top: 65px;
-  z-index: 999;
+  z-index: 1;
   pointer-events: none;
   /* padding: 20px 0 0 0; */
 }
@@ -82,7 +82,7 @@
   height: 90px;
 
   width: 0.15rem;
-  background-color: var(--text-primary);
+  background-color: black;
   margin-right: 25px;
 }
 .swiper-pagination-bullet {
@@ -96,6 +96,9 @@
 }
 .number {
   display: none;
+}
+.swiper-pagination-vertical {
+  z-index: 9 !important;
 }
 
 @media screen and (min-width: 768px) {
