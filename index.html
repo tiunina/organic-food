@@ -15,9 +15,9 @@
     <title>Organic Food</title>
     
     <script type="module" crossorigin src="/organic-food/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/organic-food/assets/vendor-5d8490b3.js">
-    <link rel="stylesheet" href="/organic-food/assets/vendor-412462ad.css">
-    <link rel="stylesheet" href="/organic-food/assets/index-02beaf9b.css">
+    <link rel="modulepreload" crossorigin href="/organic-food/assets/vendor-aeb40358.js">
+    <link rel="stylesheet" href="/organic-food/assets/vendor-5f86b805.css">
+    <link rel="stylesheet" href="/organic-food/assets/index-42470898.css">
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,7 @@
       <div>
         <a href="/index.html" class="logo">
           <svg class="header_icon-logo" width="174" height="111.7">
-            <use href="/organic-food/assets/icons-6bb7565f.svg#icon-logo"></use>
+            <use href="/organic-food/assets/icons-33e6b539.svg#icon-logo"></use>
           </svg>
         </a>
       </div>
@@ -48,7 +48,7 @@
 
         <button class="cart-btn header__btn">
           <svg class="cart-icon btn__svg" width="19" height="19">
-            <use href="/organic-food/assets/icons-6bb7565f.svg#icon-cart"></use>
+            <use href="/organic-food/assets/icons-33e6b539.svg#icon-cart"></use>
           </svg>
           <span class="cart-span">Cart</span>
         </button>
@@ -60,10 +60,41 @@
       </div>
       <button type="button" class="burger-btn">
         <svg class="burger-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-menu"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-menu"></use>
         </svg>
       </button>
     </nav>
+
+
+<!-- modal-window -->
+     <div class="modal-overley">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-icon" width="28" height="28">
+        <use href="/img/header/close.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="modal">
+      <nav class="nav-menu">
+        <ul class="section-menu" id="mobile-menu">
+          <li class="box-menu">
+            <a href="#">About</a>
+          </li>
+          <li class="box-menu">
+            <a href="#">Products</a>
+          </li>
+          <li class="box-menu">
+            <a href="#">Food</a>
+          </li>
+
+        </ul>
+      </nav>
+      <a
+        class="contacts-menu-submit"
+        id="mobile-order-btn"
+        href="#work-together"
+        >Order the project</a
+      >
+    </div>
   </div>
 </header>
 
@@ -120,7 +151,7 @@
     <div class="swiper-pagination"></div>
     <div class="hero_icon_leaf">
       <svg class="hero_icon">
-        <use href="/organic-food/assets/icons-6bb7565f.svg#icon-leaf"></use>
+        <use href="/organic-food/assets/icons-33e6b539.svg#icon-leaf"></use>
       </svg>
     </div>
 
@@ -173,10 +204,13 @@
     </picture>
 
     <svg class="about-us_icon_left" width="74" height="260">
-      <use href="/organic-food/assets/icons-6bb7565f.svg#icon-green-branch-left"></use>
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-green-branch-left"></use>
     </svg>
     <svg class="about-us_icon_right" width="74" height="260">
-      <use href="/organic-food/assets/icons-6bb7565f.svg#icon-green-branch-right"></use>
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-green-branch-right"></use>
+    </svg>
+    <svg class="about-us_icon_leaf" width="74" height="260">
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-green-leaf-left"></use>
     </svg>
   </div>
 </section>
@@ -192,10 +226,14 @@
       </p>
     </div>
     <div class="svg_ourProduct_wrapper">
-      <button type="button" class="basket_btn svg_btn_ourProduct">
+      <button
+        type="button"
+        class="basket_btn svg_btn_ourProduct"
+        data-category="all"
+      >
         <svg class="basket-icon" width="36" height="28">
           <use
-            href="/organic-food/assets/icons-6bb7565f.svg#icon-baskets"
+            href="/organic-food/assets/icons-33e6b539.svg#icon-baskets"
             width="36"
             height="28"
           ></use>
@@ -203,44 +241,67 @@
         <span class="svg_descr">Show All</span>
       </button>
 
-      <button type="button" class="fruits_btn svg_btn_ourProduct">
+      <button
+        type="button"
+        class="fruits_btn svg_btn_ourProduct"
+        data-category="fruits"
+      >
         <svg class="fruits-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-fruits"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-fruits"></use>
         </svg>
         <span class="svg_descr">Fruits</span>
       </button>
 
-      <button type="button" class="vegetables_btn svg_btn_ourProduct">
+      <button
+        type="button"
+        class="vegetables_btn svg_btn_ourProduct"
+        data-category="vegetables"
+      >
         <svg class="vegetables-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-vegetables"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-vegetables"></use>
         </svg>
         <span class="svg_descr">Vegetables</span>
       </button>
 
-      <button type="button" class="beans_btn svg_btn_ourProduct">
+      <button
+        type="button"
+        class="beans_btn svg_btn_ourProduct"
+        data-category="beans"
+      >
         <svg class="beans-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-beans"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-beans"></use>
         </svg>
         <span class="svg_descr">Beans</span>
       </button>
 
-      <button type="button" class="mushrooms_btn svg_btn_ourProduct">
+      <button
+        type="button"
+        class="mushrooms_btn svg_btn_ourProduct"
+        data-category="mushrooms"
+      >
         <svg class="mushrooms-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-mushrooms"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-mushrooms"></use>
         </svg>
         <span class="svg_descr">Mushrooms</span>
       </button>
 
-      <button type="button" class="eggs_btn svg_btn_ourProduct">
+      <button
+        type="button"
+        class="eggs_btn svg_btn_ourProduct"
+        data-category="eggs"
+      >
         <svg class="eggs-icon" width="36" height="28">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-eggs"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-eggs"></use>
         </svg>
         <span class="svg_descr">Eggs</span>
       </button>
     </div>
 
     <div class="product_gallery">
-      <div class="product_wrapper wrapper_background_lettuce">
+      <div
+        class="product_wrapper wrapper_background_lettuce"
+        data-category="vegetables"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/green-oak-869eb685.png"
@@ -253,16 +314,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_pear">
+      <div
+        class="product_wrapper wrapper_background_pear"
+        data-category="fruits"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/pear-1403f99e.png"
@@ -275,16 +339,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_brocolli">
+      <div
+        class="product_wrapper wrapper_background_brocolli"
+        data-category="vegetables"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/broccoli-afc441a6.png"
@@ -297,16 +364,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_tomatoes">
+      <div
+        class="product_wrapper wrapper_background_tomatoes"
+        data-category="fruits"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/tomatoes-da2a7f6c.png"
@@ -319,16 +389,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_cucumbers">
+      <div
+        class="product_wrapper wrapper_background_cucumbers"
+        data-category="vegetables"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/cucumber-3ceb1ace.png"
@@ -341,16 +414,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_cherries">
+      <div
+        class="product_wrapper wrapper_background_cherries"
+        data-category="fruits"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/cherry-450499a3.png"
@@ -363,16 +439,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_avocados">
+      <div
+        class="product_wrapper wrapper_background_avocados"
+        data-category="fruits"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/avocado-d9989c06.png"
@@ -385,16 +464,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_raspberries">
+      <div
+        class="product_wrapper wrapper_background_raspberries"
+        data-category="fruits"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/raspberry-1d45e3db.png"
@@ -407,16 +489,19 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
       </div>
 
-      <div class="product_wrapper wrapper_background_cabbages">
+      <div
+        class="product_wrapper wrapper_background_cabbages"
+        data-category="vegetables"
+      >
         <img
           class="product_img"
           src="/organic-food/assets/cabbage-e907b3f9.png"
@@ -429,10 +514,10 @@
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-stars"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -446,17 +531,17 @@
   <div class="container_taste-nature container">
     <div class="title_wrapper">
       <svg class="white-leaf_svg">
-        <use href="/organic-food/assets/icons-6bb7565f.svg#icon-white-leaf"></use>
+        <use href="/organic-food/assets/icons-33e6b539.svg#icon-white-leaf"></use>
       </svg>
 
       <h2 class="taste-nature_title">Taste nature&#39;s best in every bite</h2>
       <button type="button" class="taste-nature_btn">Shop Now</button>
     </div>
     <svg class="white-branch_svg top_svg" width="136" height="227">
-      <use href="/organic-food/assets/icons-6bb7565f.svg#icon-white-branch-second"></use>
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-white-branch-second"></use>
     </svg>
     <svg class="white-branch_svg bottom_svg" width="136" height="227">
-      <use href="/organic-food/assets/icons-6bb7565f.svg#icon-white-branch"></use>
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-white-branch"></use>
     </svg>
   </div>
 </section>
@@ -486,6 +571,12 @@
         <button type="button" class="qualityFood_btn">Explore</button>
       </div>
     </div>
+    <svg class="quality-food_icon_left" width="74" height="74">
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-green-branch-left"></use>
+    </svg>
+    <svg class="quality-food_icon_right" width="74" height="74">
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-green-leaf-right"></use>
+    </svg>
   </div>
 </section>
 
@@ -513,7 +604,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$55</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -530,7 +621,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$35</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -547,7 +638,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$65</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -564,7 +655,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$45</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -581,7 +672,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$65</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -598,7 +689,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$45</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -615,7 +706,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$65</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -632,7 +723,7 @@
           <div class="salad_icon_wrapper">
             <p class="salad_price">$45</p>
             <svg class="shopping-icon_salad" width="20" height="18">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-shopping"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
@@ -655,7 +746,7 @@
       </div>
       <div class="reviews-swiper-container">
         <ul class="reviews-list swiper-wrapper"></ul>
-        <div class="swiper-pagination_slider"></div>
+        <div class="swiper-pagination_review"></div>
       </div>
     </div>
   </div>
@@ -759,23 +850,23 @@
     <div class="block-two_footer">
       <a href="/index.html" class="logo_footer">
         <svg class="footer_icon-logo" width="174" height="111.7">
-          <use href="/organic-food/assets/icons-6bb7565f.svg#icon-logo-green"></use>
+          <use href="/organic-food/assets/icons-33e6b539.svg#icon-logo-green"></use>
         </svg>
       </a>
         <div class="social-media_footer">
           <a href="/index.html" class="social-media_footer_link">
             <svg class="footer_icon-social" width="24" height="24">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-facebook"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-facebook"></use>
             </svg>
           </a>
           <a href="/index.html" class="social-media_footer_link">
             <svg class="footer_icon-social" width="24" height="24">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-twiter"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-twiter"></use>
             </svg>
           </a>
           <a href="/index.html" class="social-media_footer_link">
             <svg class="footer_icon-social" width="24" height="24">
-              <use href="/organic-food/assets/icons-6bb7565f.svg#icon-instagram"></use>
+              <use href="/organic-food/assets/icons-33e6b539.svg#icon-instagram"></use>
             </svg>
           </a>
         </div>
@@ -801,6 +892,12 @@
       <!-- <a class="link_footer_block-three" href="">Enter email address</a>
       <a class="link_footer_block-three" href="">Subscribe</a> -->
     </div>
+     <svg class="footer_icon_left" width="74" height="260">
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-branch-footer-left"></use>
+    </svg>
+     <svg class="footer_icon_right" width="74" height="260">
+      <use href="/organic-food/assets/icons-33e6b539.svg#icon-branch-footer-right"></use>
+    </svg>
   </div>
 </footer>
 
