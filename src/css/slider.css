@@ -6,7 +6,7 @@
 
 .swiper-wrapper_slider {
   display: flex;
-  gap: 24px;
+  gap: 0;
   align-items: center;
 }
 .slider_img img {
@@ -17,4 +17,9 @@
 }
 .swiper-slide_slider {
   flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+  .swiper-wrapper_slider {
+    gap: 24px;
+  }
 }

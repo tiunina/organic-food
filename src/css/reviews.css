@@ -9,3 +9,131 @@
   overflow: hidden;
   padding: 0;
 }
+.review-item {
+  position: relative;
+  margin: 143px 18px 0 0;
+  width: 339px;
+  height: 443px;
+  background: #eaf8d3;
+}
+.review_descroption_wrapper {
+  height: 243px;
+  padding: 103px 10px 10px 10px;
+}
+.review-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.67;
+  text-align: center;
+  color: #333;
+  font-family: var(--first-family);
+}
+.review-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.9;
+  text-transform: capitalize;
+  text-align: center;
+  color: #333;
+  font-family: var(--second-family);
+}
+.review-img {
+  position: absolute;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  top: -80px;
+  left: 68px;
+}
+
+.stars-icon_review {
+  width: 135px;
+  height: 26px;
+  position: absolute;
+  bottom: 5px;
+  left: 78px;
+}
+.swiper-pagination_review {
+  height: fit-content;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* .swiper-pagination_review {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: aqua;
+} */
+
+/* .swiper-pagination_review {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+} */
+
+.swiper-pagination_review .swiper-pagination-bullet {
+  background-color: #eaf8d3 !important;
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.swiper-pagination_review .my-custom-active-bullet {
+  background-color: #8fb339 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .review-item {
+    margin: 143px 18px 0 0;
+    width: 339px;
+    height: 443px;
+  }
+  .review_descroption_wrapper {
+    height: 363px;
+    padding: 143px 10px 10px 10px;
+  }
+  .review-desc {
+    font-size: 18px;
+  }
+  .review-name {
+    font-size: 36px;
+  }
+  .review-img {
+    width: 200px !important;
+    height: 200px !important;
+
+    top: -100px;
+    /* left: 70px;
+     */
+    left: 4.5rem;
+  }
+
+  .stars-icon_review {
+    width: 135px;
+    height: 26px;
+
+    bottom: 5px;
+    left: 102px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .review-img {
+    left: 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .review-img {
+    left: 5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .review-img {
+    left: 4.5rem;
+  }
+}

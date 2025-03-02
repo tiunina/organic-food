@@ -84,6 +84,9 @@
 .about-us_icon_right {
   display: none;
 }
+.about-us_icon_leaf {
+  display: none;
+}
 
 /************ tablet ****************/
 @media screen and (min-width: 768px) {
@@ -96,6 +99,7 @@
   }
   .img_carrot {
     left: 40px;
+    z-index: 99;
   }
   .img_cabbage {
     display: block;
@@ -114,6 +118,18 @@
     position: absolute;
     right: 5px;
     bottom: 206px;
+  }
+  .about-us_icon_leaf {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .about-us_icon_leaf {
+    width: 102px;
+    height: 68px;
+    bottom: -35px;
+    left: 0px;
   }
 }
 
@@ -173,7 +189,13 @@
   }
   .about-us_icon_right {
     right: 50px;
-    bottom: 510px;
+    bottom: 110px;
+  }
+  .about-us_icon_leaf {
+    width: 142px;
+    height: 108px;
+    bottom: -220px;
+    left: 206px;
   }
 }
 
@@ -187,7 +209,7 @@
   .about-us_icon_right {
     /* left: 1400px; */
     right: 145px;
-    bottom: 586px;
+    bottom: 186px;
   }
   .img_carrot {
     width: 337px;
@@ -195,5 +217,13 @@
     margin-right: 52px;
     bottom: 42px;
     left: 187px;
+  }
+  .about-us_icon_leaf {
+    /* width: 162px;
+    height: 128px; */
+    width: 122px;
+    height: 88px;
+    bottom: -260px;
+    left: 290px;
   }
 }
