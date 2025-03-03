@@ -82,7 +82,7 @@
   height: 90px;
 
   width: 0.15rem;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-right: 25px;
 }
 .swiper-pagination-bullet {
