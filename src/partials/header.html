@@ -44,15 +44,20 @@
     </nav>
 
 
-<!-- modal-window -->
+<!-- MODAL WINDOW -->
      <div class="modal-overley">
     <button type="button" class="modal-close-btn">
-      <svg class="modal-close-icon" width="28" height="28">
-        <use href="/img/header/close.svg#icon-x"></use>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/images/icons.svg#icon-close"></use>
       </svg>
     </button>
     <div class="modal">
       <nav class="nav-menu">
+        <a href="/index.html" class="logo-modal">
+           <svg class="header_icon-logo_modal" width="174" height="111.7">
+             <use href="/images/icons.svg#icon-logo"></use>
+           </svg>
+         </a>
         <ul class="mobile-menu" id="mobile-menu">
           <li class="box-menu">
             <a href="#">About</a>
@@ -66,12 +71,62 @@
 
         </ul>
       </nav>
-      <a
-        class="contacts-menu-submit"
-        id="mobile-order-btn"
-        href="#work-together"
-        >Order the project</a
-      >
+
+      <button  class="contacts-menu-submit"
+        id="mobile-order-btn">Contact Me</button>
     </div>
+    <svg class="modal_icon_left" width="73" height="89">
+      <use href="/images/icons.svg#icon-branch-footer-left"></use>
+    </svg>
+     <svg class="modal_icon_right" width="73" height="89">
+      <use href="/images/icons.svg#icon-branch-footer-right"></use>
+    </svg>
   </div>
+
+<!-- CONTACT FORM -->
+
+  <div class="contact-modal">
+  <button type="button" class="contact-close-btn">
+    <svg class="contact-close-icon" width="28" height="28">
+      <use href="/images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <form class="contact-form">
+    <h2 class="title_contact-form">Leave Your Contact Info</h2>
+    <input class="contact-form_input" type="text" placeholder="Your Name" required />
+    <input
+      class="contact-form_input"
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        pattern="/^([\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+\.)*[\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+@((((([a-z0-9]{1}[a-z0-9\-]{0,62}[a-z0-9]{1})|[a-z])\.)+[a-z]{2,6})|(\d{1,3}\.){3}\d{1,3}(\:\d{1,5})?)$/i"
+        required
+      />
+    <button class="submit-btn_contact-form" type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- CONTACT FORM HEADER-->
+
+  <!-- <div class="contact-modal-header">
+  <button type="button" class="contact-close-btn-header">
+    <svg class="contact-close-icon" width="28" height="28">
+      <use href="/images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <form class="contact-form">
+    <h2 class="title_contact-form">Leave Your Contact Info</h2>
+    <input class="contact-form_input" type="text" placeholder="Your Name" required />
+    <input
+      class="contact-form_input"
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        pattern="/^([\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+\.)*[\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+@((((([a-z0-9]{1}[a-z0-9\-]{0,62}[a-z0-9]{1})|[a-z])\.)+[a-z]{2,6})|(\d{1,3}\.){3}\d{1,3}(\:\d{1,5})?)$/i"
+        required
+      />
+    <button class="submit-btn_contact-form" type="submit">Submit</button>
+  </form>
+</div> -->
+
 </header>

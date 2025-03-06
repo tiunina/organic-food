@@ -1,13 +1,12 @@
 .modal-overley {
   position: fixed;
-
   left: 100%;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: #eaf8d3;
   background-size: cover;
-  padding: 302px 16px 64px;
+  padding: 150px 16px 64px;
   z-index: 40;
   opacity: 0;
   visibility: hidden;
@@ -28,17 +27,13 @@
   pointer-events: auto;
 }
 
-/* .modal-overley.is-open ~ .section_hero {
-  display: none !important;
-} */
-
 .modal {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
+
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .modal-overley .nav-menu {
@@ -51,8 +46,6 @@
   color: #8fb339;
   font-weight: 500;
   font-size: 36px;
-
-  /* transition: opacity 0.5s ease, max-height 0.5s ease; */
 }
 
 .modal-overley.is-open .nav-menu {
@@ -68,15 +61,131 @@
 
 .modal-close-btn {
   position: fixed;
-  top: 10px;
+  top: 30px;
   right: 10px;
-  fill: #8fb339;
-  stroke: #8fb339;
-  /* border: none; */
+  border: none;
   background-color: transparent;
 }
+.modal-close-icon {
+  fill: #8fb339;
+  stroke: #8fb339;
+}
+.modal_icon_left {
+  position: fixed;
+  top: 600px;
+  right: 0;
+}
+.modal_icon_right {
+  position: fixed;
+  top: -20px;
+  left: 0;
+}
 
-/* main window */
+.contacts-menu-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0 50px;
+  width: 174px;
+  height: 50px;
+  background: #8fb339;
+  border: 1px solid #8fb339;
+
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: var(--first-family);
+  padding: 17px 42px;
+  margin-top: 50px;
+}
+
+/* ---------------CONTACT FORM------------------ */
+.contact-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+  background-color: #eaf8d3;
+
+  padding-top: 200px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: none;
+  margin: auto;
+}
+
+.contact-modal.is-open {
+  display: block;
+}
+
+.contact-close-btn {
+  position: fixed;
+  top: 60px;
+  right: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f5fdf6;
+  border: 2px solid #8fb339;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form_input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #8fb339;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-form_input:focus {
+  border-color: #8fb339;
+  box-shadow: 0 0 8px rgba(104, 181, 101, 0.5);
+}
+.title_contact-form {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #8fb339;
+  text-align: center;
+}
+.submit-btn_contact-form {
+  z-index: 99999;
+  padding: 10px 20px;
+  background-color: #8fb339;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn_contact-form:hover {
+  background-color: #4f954a;
+  transform: scale(1.05);
+}
+
+/*--------------- main window -------------------*/
 
 .header {
   position: absolute;
@@ -113,6 +222,7 @@
   display: inline-block;
   text-decoration: none;
 }
+
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 50px;
