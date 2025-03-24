@@ -54,7 +54,11 @@
 
   font-family: var(--first-family);
 }
-
+.taste-nature_btn:hover,
+.taste-nature_btn:active {
+  background-color: #4f954a;
+  transform: scale(1.05);
+}
 .top_svg {
   width: 86px;
   height: 177px;

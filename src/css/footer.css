@@ -41,28 +41,28 @@
   gap: 10px;
   margin: 20px;
   padding: 10px;
-  background-color: #f5fdf6; /* Soft green background */
-  border: 2px solid #8fb339; /* Light green border */
+  background-color: #f5fdf6;
+  border: 2px solid #8fb339;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .footer_input {
   flex: 1;
   padding: 10px 15px;
-  border: 2px solid #8fb339; /* Soft green border */
+  border: 2px solid #8fb339;
   border-radius: 5px;
   outline: none;
   font-size: 16px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .footer_input:focus {
-  border-color: #8fb339; /* Highlight green on focus */
-  box-shadow: 0 0 8px rgba(104, 181, 101, 0.5); /* Glow effect */
+  border-color: #8fb339;
+  box-shadow: 0 0 8px rgba(104, 181, 101, 0.5);
 }
 
 .footer_form_btn {
   padding: 10px 20px;
-  background-color: #8fb339; /* Main green button color */
+  background-color: #8fb339;
   color: white;
   border: none;
   border-radius: 5px;
@@ -73,13 +73,15 @@
 }
 
 .footer_form_btn:hover {
-  background-color: #4f954a; /* Darker green on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #4f954a;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .footer_form_btn:active {
-  background-color: #3d7237; /* Even darker green on click */
-  transform: scale(0.95); /* Subtle click feedback */
+  background-color: #3d7237;
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
 .footer_icon_left {

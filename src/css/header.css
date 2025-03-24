@@ -57,6 +57,7 @@
 .box-menu a:focus {
   text-decoration: underline;
   color: var(--flame-red-color);
+  cursor: pointer;
 }
 
 .modal-close-btn {
@@ -130,6 +131,7 @@
   border: none;
   background-color: transparent;
   z-index: 100;
+  cursor: pointer;
 }
 .contact-form {
   display: flex;
@@ -183,6 +185,7 @@
 .submit-btn_contact-form:hover {
   background-color: #4f954a;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 /*--------------- main window -------------------*/
@@ -217,6 +220,7 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .logo {
   display: inline-block;
@@ -246,6 +250,7 @@
     color: #fff;
     -webkit-text-stroke: 1px #000;
   }
+
   .cart-btn {
     margin-right: 20px;
     display: flex;
@@ -271,6 +276,14 @@
     padding: 0;
     line-height: 0;
   }
+
+  .cart-btn:hover .cart-icon {
+    stroke: #8fb339;
+  }
+
+  .cart-btn:hover .cart-span {
+    color: #8fb339;
+  }
   .button-wrapper {
     width: 174px;
     height: 50px;
@@ -287,6 +300,11 @@
     height: 50px;
     background: rgba(255, 255, 255, 0.2);
   }
+  .contact-btn:hover,
+  .contact-btn:active {
+    background-color: #4f954a;
+    transform: scale(1.05);
+  }
   .svg-button {
     border-color: #fff;
     width: 174px;
@@ -296,6 +314,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .btn-text {
     font-weight: 400;
     font-size: 14px;
@@ -331,18 +350,24 @@
     color: #42272d;
   }
 
-  .nav-list-link:hover,
-  .nav-list-link:focus {
-    color: #fff;
+  .nav-list__item-link {
+    font-family: var(--first-family);
+    color: var(--text-primary);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5625;
+  }
+  .nav-list__item-link:hover,
+  .nav-list__item-link:active {
+    color: #8fb339;
   }
 }
 @media screen and (min-width: 1280px) {
   .contact-btn {
     width: 174px;
   }
-  .header {
-    /* padding: 34px 0; */
-  }
+
   .logo {
     font-weight: 900;
     font-size: 50px;
@@ -350,17 +375,4 @@
   .nav-list {
     gap: 35px;
   }
-}
-
-.nav-list__item {
-}
-.nav-list__item-link {
-  font-family: var(--first-family);
-  /* font-size: 1rem;
-  line-height: 1.5rem; */
-  color: var(--text-primary);
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5625;
 }

@@ -13,12 +13,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* fix the font-family */
 body {
-  /* font-family: "Manrope", sans-serif; */
   margin: 0;
   padding: 0;
-  /* background-color: #1c2225; */
 }
 
 p:last-child {

@@ -15,7 +15,7 @@ if (orderModalBtn) {
   orderModalBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
     contactModal.classList.add('is-open');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when open
+    document.body.style.overflow = 'hidden';
   });
 }
 

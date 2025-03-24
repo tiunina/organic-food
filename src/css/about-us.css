@@ -1,17 +1,11 @@
 .container__aboutUs {
   display: flex;
-
   column-gap: 52px;
-  /* height: 982px; */
   position: relative;
 }
-/* .img_carrot_wrapper {
-  align-self: flex-end;
-} */
+
 .img_carrot {
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
   position: relative;
 }
 .img_cabbage {
@@ -20,29 +14,21 @@
 
 .aboutUs_description {
   display: flex;
-  /* align-items: flex-start;
-  justify-content: flex-start; */
   flex-direction: column;
   gap: 10px;
-
   width: 300px;
-  /* height: 358px; */
   position: relative;
 }
 .about-us {
   font-family: var(--first-family);
   font-weight: 400;
   font-size: 14px;
-
-  /* line-height: 30px; */
   line-height: 1.66667;
   color: #333;
 }
 .aboutUs_title {
   font-weight: 400;
   font-size: 30px;
-
-  /* line-height: 70px; */
   line-height: 1.4;
   text-transform: capitalize;
   color: #8fb339;
@@ -51,24 +37,18 @@
   font-family: var(--first-family);
   font-weight: 400;
   font-size: 14px;
-
-  /* line-height: 30px; */
   line-height: 1.66667;
   color: #333;
 }
 .aboutUs_btn {
-  /* position: relative; */
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 0 50px;
   width: 174px;
   height: 50px;
   background: #8fb339;
   border: 1px solid #8fb339;
-
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -77,7 +57,16 @@
   font-family: var(--first-family);
   padding: 17px 42px;
 }
-
+.aboutUs_btn:hover {
+  background-color: #4f954a;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.aboutUs_btn:active {
+  background-color: #3d7237;
+  transform: scale(1.05);
+  cursor: pointer;
+}
 .about-us_icon_left {
   display: none;
 }
@@ -143,7 +132,6 @@
     height: 358px;
   }
   .container__aboutUs {
-    /* column-gap: 100px; */
     height: 582px;
   }
   .about-us {
@@ -159,7 +147,6 @@
     width: 408px;
   }
   .aboutUs_btn {
-    /* position: relative; */
     border-radius: 0 50px;
     width: 174px;
     height: 50px;
@@ -207,7 +194,6 @@
     top: -130px;
   }
   .about-us_icon_right {
-    /* left: 1400px; */
     right: 145px;
     bottom: 186px;
   }
@@ -219,8 +205,6 @@
     left: 187px;
   }
   .about-us_icon_leaf {
-    /* width: 162px;
-    height: 128px; */
     width: 122px;
     height: 88px;
     bottom: -260px;
