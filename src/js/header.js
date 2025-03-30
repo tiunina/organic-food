@@ -1,3 +1,6 @@
+import Toastify from 'toastify-js';
+import 'toastify-js/src/toastify.css';
+
 const burger = document.querySelector('.burger-btn');
 const closeBtn = document.querySelector('.modal-close-btn');
 const mobileMenu = document.querySelector('.modal-overley');
@@ -59,3 +62,49 @@ document.addEventListener('keydown', event => {
     toggleMobileMenu();
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuLinks = document.querySelectorAll('.menu-link');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.remove('is-open');
+    });
+  });
+});
+
+//CONTACT FORM
+const contactForm = document.querySelector('#contact-form');
+
+function handleContact(event) {
+  event.preventDefault();
+
+  const name = document.querySelector('#contact-form_name').value;
+  const email = document.querySelector('#contact-form_email').value;
+
+  if (!name || !email) {
+    showToast('Please fill in all fields!', 'error');
+    return;
+  }
+
+  console.log({ name, email });
+
+  showToast('Form submitted successfully! 🎉', 'success');
+
+  contactForm.reset();
+}
+
+function showToast(message, type) {
+  Toastify({
+    text: message,
+    duration: 3000,
+    gravity: 'top',
+    position: 'center',
+    style: {
+      background: type === 'success' ? '#28a745' : '#dc3545',
+    },
+    stopOnFocus: true,
+  }).showToast();
+}
+
+contactForm.addEventListener('submit', handleContact);

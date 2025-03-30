@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const productsPerPage = 3;
   let currentIndex = 9;
-  let selectedCategory = 'all'; // Default category
+  let selectedCategory = 'all';
 
   generateProductGallery(products.slice(0, currentIndex));
 
@@ -115,9 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleCategoryClick() {
-    selectedCategory = this.getAttribute('data-category'); // Update selected category
-    currentIndex = 9; // Reset index when a new category is selected
-    productGallery.innerHTML = ''; // Clear existing products
+    selectedCategory = this.getAttribute('data-category');
+    currentIndex = 9;
+    productGallery.innerHTML = '';
+
+    buttons.forEach(button => button.classList.remove('active'));
+    this.classList.add('active');
 
     const filteredProducts =
       selectedCategory === 'all'
@@ -132,23 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
       products.filter(p => p.category === selectedCategory).length -
       currentIndex;
     showMoreBtn.style.display = remainingProducts > 0 ? 'block' : 'none';
-
-    // const productItems = document.querySelectorAll('.product_wrapper');
-
-    // const category = this.getAttribute('data-category');
-
-    // const toggleProduct = product => {
-    //   if (
-    //     category === 'all' ||
-    //     product.getAttribute('data-category') === category
-    //   ) {
-    //     product.style.display = 'flex';
-    //   } else {
-    //     product.style.display = 'none';
-    //   }
-    // };
-
-    // productItems.forEach(toggleProduct);
   }
 
   function generateProductGallery(products) {
@@ -211,23 +197,4 @@ document.addEventListener('DOMContentLoaded', () => {
       showMoreBtn.style.display = 'none';
     }
   }
-
-  // function handleClickToMore() {
-  //   const filteredProducts =
-  //     selectedCategory === 'all'
-  //       ? products.slice(currentIndex, currentIndex + productsPerPage)
-  //       : products
-  //           .filter(p => p.category === selectedCategory)
-  //           .slice(currentIndex, currentIndex + productsPerPage);
-
-  //   generateProductGallery(filteredProducts);
-  //   currentIndex += productsPerPage;
-
-  //   const remainingProducts =
-  //     products.filter(p => p.category === selectedCategory).length -
-  //     currentIndex;
-  //   if (remainingProducts <= 0) {
-  //     showMoreBtn.style.display = 'none';
-  //   }
-  // }
 });

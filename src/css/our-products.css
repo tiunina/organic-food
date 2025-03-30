@@ -34,7 +34,7 @@
   justify-content: center !important;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px !important;
+  gap: 10px !important;
   width: 300px !important;
   height: 150px !important;
   margin-bottom: 20px;
@@ -50,6 +50,7 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  width: 80px;
 }
 .svg_btn_ourProduct:hover {
   stroke: #4f954a;
@@ -62,6 +63,14 @@
   color: #3d7237;
   transform: scale(0.95);
   cursor: pointer;
+}
+
+.svg_btn_ourProduct.active {
+  background-color: #8fb339;
+  color: white;
+
+  border-radius: 8px;
+  transform: scale(1.05);
 }
 
 .product_gallery {

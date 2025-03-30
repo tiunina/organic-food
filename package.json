@@ -20,6 +20,7 @@
     "izitoast": "^1.4.0",
     "lenis": "^1.1.16",
     "swiper": "^11.2.1",
+    "toastify-js": "^1.12.0",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

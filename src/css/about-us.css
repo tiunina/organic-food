@@ -93,7 +93,7 @@
   .img_cabbage {
     display: block;
     position: relative;
-    z-index: 99;
+    z-index: 9;
     width: 700px;
   }
   .about-us_icon_left {
