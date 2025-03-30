@@ -3,7 +3,7 @@ const products = [
     name: 'Lettuce',
     price: '$5/kg',
     category: 'vegetables',
-    image: '/images/our-products/green-oak.png',
+    image: '/organic-food/images/our-products/green-oak.png',
     backgroundClass: 'wrapper_background_green',
   },
   {
