@@ -151,10 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="product_icon_wrapper">
             <svg class="stars-icon" width="36" height="28">
-              <use href="/images/icons.svg#icon-stars"></use>
+              <use href="/organic-food/images/icons.svg#icon-stars"></use>
             </svg>
             <svg class="shopping-icon" width="20" height="18">
-              <use href="/images/icons.svg#icon-shopping"></use>
+              <use href="/organic-food/images/icons.svg#icon-shopping"></use>
             </svg>
           </div>
         </div>
